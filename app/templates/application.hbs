@@ -1,5 +1,14 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h3>ember-radio-test</h3>
+{{#radio-button
+  radioId="purple-radio"
+  radioClass="my-custom-class"
+  value="purple"
+  groupValue=color
+  changed="colorChanged"}}
+  Purple
+{{/radio-button}}
+
+<h3>Standard &lt;input&gt; Test</h3>
+{{input type="radio" value="lessPurple"}}
 
 {{outlet}}

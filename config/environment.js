@@ -43,7 +43,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.rootURL = '/radio-button-test';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
